@@ -47,16 +47,13 @@ header{
     cursor: pointer;
 }
 
-.login-header{
+.link-header{
     width: 182px;
     height: 51px;
-    border: 1px solid #2a7ae4;
+    border: 1px solid var(--primary-color);
     text-align: center;
     line-height: 51px;
-}
-
-.login-header a {
-    color: #2a7ae4;
+    color: var(--primary-color);
 }
 
 .search-button-mobile{
@@ -65,6 +62,54 @@ header{
     height: 20px;
     cursor: pointer;
     display: none;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 32px;;
+    height: 352px;
+    background: url(../../img/banner-AluraGeek.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 32px;
+    width: 601px;
+}
+
+.banner-content h2 {
+    font-weight: 700;
+    font-size: 52px;
+    color: var(--white-color);
+    margin: 0;
+    padding: 0;
+}
+
+.banner-content p {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--white-color);
+}
+
+.banner-content a {
+    font-weight: 100;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    height: 51px;
+    width: 130px;
+    text-align: center;
+    line-height: 51px;
+}
+
+.align-content{
+    width: 184px;
 }
 
 @media(max-width: 768px) {
@@ -82,11 +127,23 @@ header{
         padding-right: 52px;
     }
 
-    .login-header{
+    .link-header{
         width: 166px;
         height: 40px;
         line-height: 40px;
     }
+
+    .banner-content{
+        width: 404px;
+    }
+
+    .banner-content a {
+        font-size: 14px;
+        width: 119px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
 }
 
 @media(max-width: 576px){
@@ -98,7 +155,7 @@ header{
         display: none;
     }
 
-    .login-header{
+    .link-header{
         width: 133px;
         height: 40px;
         line-height: 40px;
@@ -106,5 +163,24 @@ header{
 
     .search-button-mobile{
         display: flex;
+    }
+
+    .banner{
+        height: 192px;
+    }
+
+    .banner-content {
+        width: 100%;
+        row-gap: 8px;
+        margin-left: 8%;
+    }
+
+    .banner-content h2{
+        font-size: 22px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+        font-weight: 500;
     }
 }
