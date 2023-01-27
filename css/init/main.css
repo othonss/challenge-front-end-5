@@ -7,6 +7,7 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
 }
 
 .products-title{
@@ -80,15 +81,30 @@ main {
 
     .products-details{
         font-size: 12px;
-        font-weight: 500;
-        color: var(--gray-color);
-        margin: 8px 0px;
     }
+  }
+
+  @media(max-width: 690px){
+    .products-list li:nth-child(4){
+        display: none;
+      }
   }
 
   @media(max-width: 576px){
     main {
         margin-top: 16px;
     }
+
+    .products-details{
+        font-size: 10px;
+    }
   }
+
+  @media(max-width: 517px){
+    .products-list li:nth-child(4){
+        display: block;
+      }
+
+  }
+
 
