@@ -107,4 +107,14 @@ main {
 
   }
 
+  @media(max-width: 345px){
+    .products-list li:nth-child(2n){
+        display: none;
+      }
+
+    .products-list img {
+        width: 95vw;
+    }
+  }
+
 
