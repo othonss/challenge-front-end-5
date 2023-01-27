@@ -1,0 +1,133 @@
+footer{
+    margin-top: 64px;
+    background: var(--footer-color);
+    height: 368px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.footer-items h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footer-items form {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-items form input{
+    border-radius: 4px;
+    height: 56px;
+    padding: 8px 0px 0px 12px;
+    box-sizing: border-box;
+}
+
+.footer-items form textarea{
+    border-radius: 4px;
+    height: 82px;
+    padding: 16px 0px 0px 12px;
+    box-sizing: border-box;
+}
+
+.footer-items form button{
+    align-self: flex-start;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    height: 51px;
+    width: 151px;
+    text-align: center;
+    line-height: 51px;
+}
+
+.dev{
+    text-align: center;
+    padding: 30px;
+}
+
+@media (max-width: 1005px) {
+    .footer-container{
+        display: grid;
+        grid-template-areas:
+        "logo form"
+        "link form"
+        "link form";
+        row-gap: 31px;
+    }
+
+
+    .footer-container .footer-items:nth-child(1){
+        grid-area: logo;
+    }
+
+    .footer-container .footer-items:nth-child(2){
+        grid-area: link;
+    }
+
+    .footer-container .footer-items:nth-child(3){
+        grid-area: form;
+    }
+}
+
+@media (max-width: 780px) {
+    .footer-container .footer-items:nth-child(3) form{
+        width: 434px;
+    }
+}
+
+@media (max-width: 665px) {
+    .footer-container .footer-items:nth-child(3) form{
+        width: 320px;
+    }
+}
+
+@media (max-width: 535px) {
+    footer{
+        height: auto;
+        padding: 32px 0px 32px 0px;
+    }
+
+    .footer-container{
+        grid-template-areas:
+        "logo"
+        "link"
+        "form";
+        justify-items: center;
+    }
+
+    .footer-container .logo{
+        width: auto;
+    }
+
+    .footer-links{
+        text-align: center;
+    }
+
+    .footer-container .footer-items:nth-child(3) form{
+        width: 95vw;
+    }
+}
+
+@media(max-width: 345px){
+    .dev{
+        font-size: 10px;
+    }
+  }
