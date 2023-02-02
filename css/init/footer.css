@@ -56,6 +56,11 @@ footer{
     width: 151px;
     text-align: center;
     line-height: 51px;
+    cursor: pointer;
+}
+
+.footer-items form button:hover {
+    background-color: var(--secondary-color);
 }
 
 .dev{

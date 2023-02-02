@@ -28,6 +28,11 @@
     width: 100%;
     text-align: center;
     line-height: 62px;
+    cursor: pointer;
+}
+
+.form-login button:hover {
+    background-color: var(--secondary-color);
 }
 
 @media (max-width: 780px) {
