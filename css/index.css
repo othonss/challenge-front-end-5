@@ -6,6 +6,7 @@
 @import url(./form/main-form.css);
 
 :root{
+    --background-main: #E5E5E5;
     --font-main: 'Raleway', sans-serif;
     --primary-color: #2a7ae4;
     --secondary-color: #5595E9;
@@ -17,5 +18,16 @@
 
 body{
     font-family: var(--font-main);
+    background: var(--background-main);
 }
 
+header{
+    background: var(--white-color);
+}
+
+footer{
+    background: var(--footer-color);
+    height: auto;
+    display: flex;
+    align-items: center;
+}
