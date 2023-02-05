@@ -26,16 +26,23 @@
                     <button class="search-button"></button>
                 </div>
             </div>
-            <!--<a href="#" class="link-header">Login</a>-->
+            <a href="#" class="link-header add-product-menu">Menu administrador</a>
             <button class="search-button-mobile"></button>
         </nav>
     </header>
     <main>
-        <h2 class="title-form-login">Iniciar Sessão</h2>
+        <h2 class="title-form-login">Adicionar novo produto </h2>
         <form action="" class="form-login">
-            <input type="text" placeholder="Escreva seu e-mail">
-            <input type="password" placeholder="Escreva sua senha">
-            <button type="submit" class="link-header">Entrar</button>
+            <input type="text" placeholder=" URL da imagem">
+            <select name="select">
+                <option value="star wars" selected>Star Wars</option>
+                <option value="consoles">Consoles</option>
+                <option value="diversos">Diversos</option>
+            </select>
+            <input type="text" placeholder="Nome do produto">
+            <input type="text" placeholder="Preço do produto">
+            <textarea name="product-message" id="product-message" cols="30" rows="10" placeholder="Descrição do produto" class="add-product-desc"></textarea>
+            <button type="submit" class="link-header">Adicionar produto</button>
         </form>
     </main>
     <footer>

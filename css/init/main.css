@@ -25,13 +25,13 @@ main {
     color: var(--primary-color);
     align-self: flex-end;
     padding-right: 30px;
+    margin-bottom: 26px;
 }
 
 .products-list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 26px;
     row-gap: 16px;
 }
 

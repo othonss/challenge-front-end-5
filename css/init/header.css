@@ -20,7 +20,7 @@
     width: 393px;
     height: 40px;
     font-size: 0.8em;
-    background: #F5F5F5;
+    background: var(--background-main);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -31,6 +31,7 @@
     margin: 0px 16px;
     padding-right: 170px;
     border-radius: 10px;
+    box-shadow: none;
 }
 
 .search-header input::placeholder{

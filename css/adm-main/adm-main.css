@@ -12,7 +12,7 @@
     line-height: 51px;
 }
 
-.sup-adm-main button {
+.sup-adm-main a {
     font-weight: 400;
     background-color: #2a7ae4;
     color: #fff;
@@ -21,6 +21,7 @@
     text-align: center;
     line-height: 51px;
     cursor: pointer;
+    margin-bottom: 26px;
 }
 
 .products-list li{

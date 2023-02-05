@@ -28,14 +28,12 @@
 }
 
 .footer-items form input{
-    border-radius: 4px;
     height: 56px;
     padding: 8px 0px 0px 12px;
     box-sizing: border-box;
 }
 
 .footer-items form textarea{
-    border-radius: 4px;
     height: 82px;
     padding: 16px 0px 0px 12px;
     box-sizing: border-box;
