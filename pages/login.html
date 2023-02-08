@@ -32,9 +32,10 @@
     </header>
     <main>
         <h2 class="title-form-login">Iniciar Sessão</h2>
-        <form action="" class="form-login">
-            <input type="text" placeholder="Escreva seu e-mail">
-            <input type="password" placeholder="Escreva sua senha">
+        <form action="" class="form-login" data-formLogin>
+            <input name="email" type="email" placeholder="Escreva seu e-mail" required data-inputlogin>
+            <input name="password" type="password" placeholder="Escreva sua senha" minlength="6" required data-inputlogin>    
+            <span class="error-message"></span>
             <button type="submit" class="link-header">Entrar</button>
         </form>
     </main>
@@ -80,6 +81,7 @@
         </ul>
     </footer>
     <div class="dev">Desenvolvido por Othon Santos da Silva <br> 2023</div>
+    <script src="../js/script.js" type="module"></script>
 </body>
 
 </html>
